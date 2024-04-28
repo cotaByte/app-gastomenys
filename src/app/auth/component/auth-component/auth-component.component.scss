@@ -1,0 +1,41 @@
+.bg-auth {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 34%, rgba(216, 75, 134, 1) 96%, rgba(252, 70, 107, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-card {
+    width: 40%;
+    background-color: white;
+    border-radius: 4%;
+    align-self: center;
+    padding: 25px;
+    display: grid;
+    box-shadow: -26px 23px 32px -14px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: -26px 23px 32px -14px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: -26px 23px 32px -14px rgba(0, 0, 0, 0.88);
+
+}
+
+form {
+    background-color: bisque;
+    padding: 20px 0;
+    display: grid;
+
+}
+
+form>input {
+    margin-bottom: 10px;
+    height: 25px;
+    font-size: 1rem;
+}
+
+.auth-btn {
+    height: 45px;
+    text-align: left;
+    font-size: 1rem;
+
+}
