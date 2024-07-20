@@ -1,18 +1,18 @@
 <div class="bg-auth">
-  <div class="auth-card">
-    <h1>Sign In</h1>
+  <p-card header="Sign In">
     <form [formGroup]="authForm">
       <input formControlName="username" placeholder="Username" type="text" />
       <input
         formControlName="password"
         placeholder="Password"
         type="password" />
-      <button
-        class="auth-btn"
+
+      <p-button
         [disabled]="!(authFormValid$ | async)"
-        (click)="auth.next()">
-        Log In
-      </button>
+        (click)="auth.next()"
+        size="large"
+        rounded="true"
+        label="Log In" />
     </form>
-  </div>
+  </p-card>
 </div>

@@ -9,11 +9,13 @@ import {
 import { Router } from '@angular/router';
 import { Subject, map, shareReplay, startWith, switchMap, tap } from 'rxjs';
 import { AuthServiceService } from '../../services/auth-service.service';
+import { CardModule } from 'primeng/card';
+import { Button, ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'auth-component',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, CardModule, ButtonModule],
   templateUrl: './auth-component.component.html',
   styleUrl: './auth-component.component.scss',
 })
