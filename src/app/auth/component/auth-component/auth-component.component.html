@@ -1,18 +1,24 @@
-<div class="bg-auth">
-  <p-card header="Sign In">
-    <form [formGroup]="authForm">
-      <input formControlName="username" placeholder="Username" type="text" />
-      <input
-        formControlName="password"
-        placeholder="Password"
-        type="password" />
+<ng-container
+  *ngIf="{
+    authFormValid: authFormValid$ | async,
+    onAuth: onAuth$ | async
+  }">
+  <div class="bg-auth">
+    <p-card header="Sign In">
+      <form [formGroup]="authForm">
+        <input formControlName="username" placeholder="Username" type="text" />
+        <input
+          formControlName="password"
+          placeholder="Password"
+          type="password" />
 
-      <p-button
-        [disabled]="!(authFormValid$ | async)"
-        (click)="auth.next()"
-        size="large"
-        rounded="true"
-        label="Log In" />
-    </form>
-  </p-card>
-</div>
+        <p-button
+          [disabled]="!(authFormValid$ | async)"
+          (click)="auth.next()"
+          size="large"
+          rounded="true"
+          label="Log In" />
+      </form>
+    </p-card>
+  </div>
+</ng-container>
