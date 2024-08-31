@@ -1,0 +1,5 @@
+# Ignorar la carpeta .angular
+.angular/
+
+# Ignorar la carpeta .vscode
+.vscode/
