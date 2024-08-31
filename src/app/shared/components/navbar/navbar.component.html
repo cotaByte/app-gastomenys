@@ -3,6 +3,7 @@
     <div>
       <div class="sidenav-header">GastoMenys</div>
     </div>
+    <div class="separator"></div>
     <hr />
     <div class="flex flex-column h-full">
       <div class="mt-auto">
@@ -15,6 +16,9 @@
         <ng-container
           *ngTemplateOutlet="sideNavSection; context: { $implicit: 'Stats' }">
         </ng-container>
+        <ng-container
+          *ngTemplateOutlet="sideNavSection; context: { $implicit: 'Profile' }">
+        </ng-container>
       </div>
     </div>
   </ng-template>
@@ -26,7 +30,5 @@
 </div>
 
 <ng-template #sideNavSection let-name>
-  <hr />
-  <div [routerLink]="['/auth']">{{ name }}</div>
-  <hr />
+  <div class="sidenav-section" [routerLink]="['/auth']">{{ name }}</div>
 </ng-template>

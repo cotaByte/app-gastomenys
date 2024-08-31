@@ -1,12 +1,20 @@
 .navbar-top{
     padding: 1rem;
     width: 100vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0.1, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidenav-header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 1rem 0 0.5rem ;
+    color: #1061FF;
 }
 
-.btn-burger{
-    background-color: #1061FF;
-    color:white;
-    width: 2rem;
-    height: 2rem;
+.sidenav-section{
+    padding:0.5rem 1rem;
+
+}
+
+.sidenav-section:hover{
+    background-color: #f5f5f5;
 }
