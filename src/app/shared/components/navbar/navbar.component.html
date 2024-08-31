@@ -1,0 +1,32 @@
+<p-sidebar #sidebarRef [(visible)]="sidebarVisible">
+  <ng-template pTemplate="headless">
+    <div>
+      <div class="sidenav-header">GastoMenys</div>
+    </div>
+    <hr />
+    <div class="flex flex-column h-full">
+      <div class="mt-auto">
+        <ng-container
+          *ngTemplateOutlet="
+            sideNavSection;
+            context: { $implicit: 'Expenses' }
+          ">
+        </ng-container>
+        <ng-container
+          *ngTemplateOutlet="sideNavSection; context: { $implicit: 'Stats' }">
+        </ng-container>
+      </div>
+    </div>
+  </ng-template>
+</p-sidebar>
+
+<div class="navbar-top">
+  <p-button (onClick)="sidebarVisible = true" icon="pi pi-bars" iconPos="left">
+  </p-button>
+</div>
+
+<ng-template #sideNavSection let-name>
+  <hr />
+  <div [routerLink]="['/auth']">{{ name }}</div>
+  <hr />
+</ng-template>

@@ -7,6 +7,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import {
   Observable,
   Subject,
@@ -17,8 +19,6 @@ import {
   tap,
 } from 'rxjs';
 import { AuthServiceService } from '../../services/auth-service.service';
-import { CardModule } from 'primeng/card';
-import { Button, ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'auth-component',

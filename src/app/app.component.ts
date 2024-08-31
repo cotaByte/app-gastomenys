@@ -12,6 +12,6 @@ export class AppComponent {
   title = 'Gasto Menys';
   constructor(private router: Router) {}
   ngOnInit() {
-    this.router.navigate(['auth']);
+    this.router.navigate(['home']);
   }
 }
