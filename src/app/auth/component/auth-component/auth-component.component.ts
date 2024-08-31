@@ -36,7 +36,6 @@ export class AuthComponentComponent {
     ]),
     password: new FormControl('', [Validators.required]),
   });
-
   //#endregion AUTH FORM
 
   //#region FORM VALIDATOR

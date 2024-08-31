@@ -4,7 +4,7 @@
       <div class="sidenav-header">GastoMenys</div>
     </div>
     <div class="separator"></div>
-    <hr />
+
     <div class="flex flex-column h-full">
       <div class="mt-auto">
         <ng-container
@@ -25,8 +25,12 @@
 </p-sidebar>
 
 <div class="navbar-top">
-  <p-button (onClick)="sidebarVisible = true" icon="pi pi-bars" iconPos="left">
+  <p-button
+    (onClick)="sidebarVisible = !sidebarVisible"
+    icon="pi pi-bars"
+    iconPos="left">
   </p-button>
+  <div class="sidenav-header">GastoMenys</div>
 </div>
 
 <ng-template #sideNavSection let-name>

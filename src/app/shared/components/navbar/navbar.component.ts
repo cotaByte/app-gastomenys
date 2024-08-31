@@ -11,5 +11,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  public sidebarVisible: boolean = true;
+  //#region SIDEBAR VISIBILITY
+  public sidebarVisible = false;
+  //#endregion SIDEBAR VISIBILITY
 }
