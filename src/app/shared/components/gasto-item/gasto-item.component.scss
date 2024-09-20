@@ -1,0 +1,73 @@
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  border-radius:10px;
+  margin: 1rem 0;
+  height: 6rem;
+  background-color: #f3f3f3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    padding: 2rem 1rem;
+    display: inline-table;
+    width: 100%;
+  }
+
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.date {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.left-section {
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  width: 100%;
+  padding: 0.25rem  0.5rem;
+}
+.right-section {
+    flex: 0.4;
+  display: flex;
+  justify-content: end;
+  align-items: right;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.amount{
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+.income{
+    color: #2ecc71;
+    &::before {
+        content: '+';
+        margin-right: 0.5rem;
+      }
+}
+.expense{
+    color: #e74c3c;
+    &::before {
+        content: '-';
+        margin-right: 0.5rem;
+      }
+}
